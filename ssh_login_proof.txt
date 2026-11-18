@@ -1,0 +1,11 @@
+--- SSH Login Proof for greenleaf-web ---
+Command: vagrant ssh greenleaf-web
+Output:
+Linux greenleaf-web 5.15.0-203-generic #213-Ubuntu SMP Fri Oct 23 13:21:06 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+vagrant
+3: enp0s8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:a0:a6:d0 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.56.10/24 brd 192.168.56.255 scope global enp0s8
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a00:27ff:fea0:a6d0/64 scope link 
+       valid_lft forever preferred_lft forever
