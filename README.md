@@ -1,7 +1,7 @@
 
 # Task 1: Lab Environment Setup and Initial Recon
 
-**What I did:** Set up an isolated Ubuntu VM using Vagrant/VirtualBox and deployed OWASP Juice Shop via Docker. Performed an Nmap scan from a Kali attacker machine to document open ports (22 and 3000).
+**What I did:** Set up an isolated Ubuntu VM using Vagrant/VirtualBox and deployed OWASP Juice Shop via Docker. Performed an Nmap scan from a ubuntu vm reachable via ssh attacker machine to document open ports (22 and 3000).
 
 **What was hard:** The most challenging part was ensuring the Docker container was properly exposed on Port 3000 and accessible from the attacker machine, as the Ubuntu UFW firewall was initially blocking the connection. I resolved this by explicitly allowing the port and verifying Docker bindings.
 
