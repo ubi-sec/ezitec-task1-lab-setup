@@ -1,7 +1,8 @@
-# ezitec-task1-lab-setup
-Set up a local Ubuntu virtual machine (using VirtualBox or WSL2) to act as the SmileCare Clinic server. Install a deliberately vulnerable web application (e.g., OWASP Juice Shop or DVWA) to serve as the target. Conduct an initial network scan of your own lab environment to map services and identify potential entry points.
-# what i do for this task 
-Install Ubuntu on a virtual machine or WSL2 instance
-Deploy a vulnerable web application container or service
-Run an Nmap scan against the local IP to document open ports
-Save the scan results and service versions to a text file
+
+# Task 1: Lab Environment Setup and Initial Recon
+
+**What I did:** Set up an isolated Ubuntu VM using Vagrant/VirtualBox and deployed OWASP Juice Shop via Docker. Performed an Nmap scan from a Kali attacker machine to document open ports (22 and 3000).
+
+**What was hard:** The most challenging part was ensuring the Docker container was properly exposed on Port 3000 and accessible from the attacker machine, as the Ubuntu UFW firewall was initially blocking the connection. I resolved this by explicitly allowing the port and verifying Docker bindings.
+
+**What I left out:** I skipped WSL2 and used Vagrant instead, as it provided a more reproducible, snapshot-capable, and isolated VirtualBox environment specifically tailored for penetration testing practice.
