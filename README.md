@@ -6,3 +6,4 @@
 **What was hard:** The most challenging part was ensuring the Docker container was properly exposed on Port 3000 and accessible from the attacker machine, as the Ubuntu UFW firewall was initially blocking the connection. I resolved this by explicitly allowing the port and verifying Docker bindings.
 
 **What I left out:** I skipped WSL2 and used Vagrant instead, as it provided a more reproducible, snapshot-capable, and isolated VirtualBox environment specifically tailored for penetration testing practice.
+> **Note:** Port 3000 is running **OWASP Juice Shop over HTTP**. Nmap labeled it as `ppp?` because it could not match the service to its signature database, but the fingerprint below confirms it is an HTTP service (Node.js Express).
